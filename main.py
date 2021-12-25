@@ -36,7 +36,7 @@ def run(name):
             f.write(message + "\n")
             f.close()
             print(message)
-            bitmail.send_email("Found", message)
+            #bitmail.send_email("Found", message)
             send_notice()
 
 if __name__ == '__main__':
