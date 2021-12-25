@@ -3,6 +3,8 @@ Generate random bitcoin private key and check it's balance automatically.
 
 ## How to use
 
+git clone https://github.com/Jinwenq/Randbit.git
+
 1. Install python 3 and then,
 ```python
 pip install -r requirements.txt
