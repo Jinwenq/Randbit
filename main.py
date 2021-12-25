@@ -2,6 +2,13 @@ import threading
 
 import bitlib
 
+import requests
+
+def send_notice():
+   
+    url = f"https://maker.ifttt.com/trigger/btcsuch/with/key/d8gr-cI50XXn1WSEOHf64W"
+   
+    response = requests.request("POST", url)
 
 def run(name):
     print("{} started!".format(name))
@@ -30,7 +37,7 @@ def run(name):
             f.close()
             print(message)
             bitmail.send_email("Found", message)
-
+            send_notice()
 
 if __name__ == '__main__':
     bitconf = bitlib.BitConf()
