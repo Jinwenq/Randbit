@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     bitlog = bitlib.BitLog()
 
-    bitmail.send_email("Started", "I am running")
+    #bitmail.send_email("Started", "I am running")
     for x in range(bitconf.thread_count):
         thread_name = "Thread-{}".format(x + 1)
         mythread = threading.Thread(target=run, args=(thread_name,))
