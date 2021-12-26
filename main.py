@@ -8,7 +8,7 @@ def send_notice():
 
 def run(name):
     print("{} started!".format(name))
-      while True:
+    while True:
         private_key = bitlib.BitGen.generate_private_key()
         wif = bitlib.BitGen.private2wif(private_key)
         address = bitlib.BitGen.private2address(private_key)
