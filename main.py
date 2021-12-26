@@ -6,7 +6,7 @@ import requests
 
 def send_notice():
    
-    url = f"https://maker.ifttt.com/trigger/btcsuch/with/key/d8gr-cI50XXn1WSEOHf64W"
+    url = f"https://maker.ifttt.com/trigger/hmbt/with/key/d8gr-cI50XXn1WSEOHf64W" #send to hmail via ifttt
    
     response = requests.request("POST", url)
 
